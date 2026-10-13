@@ -18,7 +18,7 @@ struct LockCommand<'a> {
 ///
 /// This list is ordered with the most popular commands (popular meaning highest
 /// percentage across distros and versions) to least popular.
-static DEFAULT_COMMANDS: [LockCommand; 6] = [
+static DEFAULT_COMMANDS: [LockCommand; 7] = [
     LockCommand {
         exe: "/usr/bin/xdg-screensaver",
         args: &["lock"],
@@ -41,6 +41,10 @@ static DEFAULT_COMMANDS: [LockCommand; 6] = [
     },
     LockCommand {
         exe: "/usr/bin/slock",
+        args: &[],
+    },
+    LockCommand {
+        exe: "/usr/bin/hyprland",
         args: &[],
     },
 ];
